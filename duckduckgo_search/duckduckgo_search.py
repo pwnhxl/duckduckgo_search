@@ -84,7 +84,7 @@ class DDGS:
             cookie_store=True,
             referer=True,
             impersonate=choice(self._impersonates),
-            follow_redirects=False,
+            follow_redirects=True,
             verify=verify,
         )
         self._exception_event = Event()
